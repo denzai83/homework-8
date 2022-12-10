@@ -28,3 +28,22 @@ def get_birthdays_per_week(users):
             print(f"{weekdays[day.weekday()]}: {', '.join(birthdays[day])}")
     else:
         print('No birthdays next week')
+
+
+if __name__ == "__main__":
+
+    users = [
+        {'Bill': datetime(1983, 12, 10),
+         'Jill': datetime(1984, 12, 11),
+         'Kim': datetime(1985, 12, 12),
+         'Jan': datetime(1986, 12, 13),
+         'Jack': datetime(1987, 12, 13),
+         'John': datetime(1988, 12, 17)},
+        {'Dave': datetime(1991, 12, 14),
+         'Den': datetime(1992, 12, 15),
+         'Nick': datetime(1993, 12, 16),
+         'ALisa': datetime(1994, 12, 14),
+         'Jim': datetime(1995, 12, 15)}
+    ]
+
+    get_birthdays_per_week(users)
